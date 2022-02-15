@@ -1,7 +1,7 @@
 {
   "name": "@rvagg/ripemd160",
   "version": "0.0.0",
-  "description": "Compute ripemd160 of bytes or strings (Uint8Array friendly)",
+  "description": "Browser-friendly ripemd160 hasher",
   "keywords": [
     "string",
     "strings",
@@ -23,7 +23,8 @@
   "scripts": {
     "lint": "standard",
     "test": "npm run lint && npm run unit",
-    "unit": "tape test/*.js"
+    "unit": "tape test/*.js",
+    "build": ""
   },
   "devDependencies": {
     "hash-test-vectors": "^1.3.2",
