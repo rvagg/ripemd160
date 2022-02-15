@@ -1,3 +1,10 @@
+### [2.1.1](https://github.com/rvagg/ripemd160/compare/v2.1.0...v2.1.1) (2022-02-15)
+
+
+### Trivial Changes
+
+* switch to mocha, use polendina for browser tests ([6029a3d](https://github.com/rvagg/ripemd160/commit/6029a3d3c53ebcd2b90dce50e2e45024a46d2422))
+
 ## [2.1.0](https://github.com/rvagg/ripemd160/compare/v2.0.2...v2.1.0) (2022-02-15)
 
 
