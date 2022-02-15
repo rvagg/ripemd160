@@ -1,3 +1,23 @@
+## [2.1.0](https://github.com/rvagg/ripemd160/compare/v2.0.2...v2.1.0) (2022-02-15)
+
+
+### Features
+
+* 0.0.0 - remove Buffer & dependencies ([0ccc3a4](https://github.com/rvagg/ripemd160/commit/0ccc3a419f83a647c0adb050a9ba4f6c375fd08e))
+
+
+### Bug Fixes
+
+* **no-release:** exec tests with `tape` ([6066daf](https://github.com/rvagg/ripemd160/commit/6066daf99dd9dacc2943f0a6068fc4e29634ad3b))
+* **src:** fix package.json for release and description ([1ea5c5e](https://github.com/rvagg/ripemd160/commit/1ea5c5ec3015222af73f150a321c4cc5010cdf2e))
+
+
+### Trivial Changes
+
+* **no-release:** add auto-release ([69d513d](https://github.com/rvagg/ripemd160/commit/69d513d95dddfdb103c0828a810db14a392d3136))
+* **no-release:** bump actions/checkout from 2.3.4 to 2.4.0 ([#1](https://github.com/rvagg/ripemd160/issues/1)) ([58109e3](https://github.com/rvagg/ripemd160/commit/58109e349abeea79f4791679e5dc030362459347))
+* **no-release:** bump actions/setup-node from 2.4.0 to 2.5.1 ([#2](https://github.com/rvagg/ripemd160/issues/2)) ([05d10d9](https://github.com/rvagg/ripemd160/commit/05d10d9e55332db6c397c189e4c3d6d6efc5ecae))
+
 2.0.1 / 2016-06-22
 ------------------
 - added LICENSE file.
