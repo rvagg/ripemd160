@@ -1,21 +1,19 @@
-'use strict'
-var test = require('tape').test
-var vectors = require('hash-test-vectors')
+const test = require('tape').test
+const vectors = require('hash-test-vectors')
+const { base64 } = require('multiformats/bases/base64')
 
-var RIPEMD160 = require('../')
+const RIPEMD160 = require('../')
 
 vectors.forEach(function (vector, i) {
-  var input = new Buffer(vector.input, 'base64')
+  const input = base64.baseDecode(vector.input)
 
-  test('vector #' + (i + 1) + ' with .update', function (t) {
+  test('vector #' + (i + 1) + '', function (t) {
     t.same(new RIPEMD160().update(input).digest('hex'), vector.ripemd160)
     t.end()
   })
+})
 
-  test('vector #' + (i + 1) + ' with streams', function (t) {
-    var hash = new RIPEMD160()
-    hash.end(input)
-    t.same(hash.read().toString('hex'), vector.ripemd160)
-    t.end()
-  })
+test('42', function (t) {
+  t.same(new RIPEMD160().update('42').digest('hex'), '0df020ba32aa9b8b904471ff582ce6b579bf8bc8')
+  t.end()
 })
