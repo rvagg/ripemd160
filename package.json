@@ -23,7 +23,7 @@
   "scripts": {
     "lint": "standard",
     "test": "npm run lint && npm run unit",
-    "unit": "node test/*.js"
+    "unit": "tape test/*.js"
   },
   "devDependencies": {
     "hash-test-vectors": "^1.3.2",
