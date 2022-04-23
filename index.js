@@ -1,4 +1,4 @@
-const utf8Encoder = new TextEncoder('utf8')
+const utf8Encoder = new TextEncoder()
 const ARRAY16 = new Array(16)
 
 const zl = [
@@ -41,20 +41,34 @@ const blockSize = 64
 class RIPEMD160 {
   constructor () {
     // state
+    /** @private */
     this._a = 0x67452301
+    /** @private */
     this._b = 0xefcdab89
+    /** @private */
     this._c = 0x98badcfe
+    /** @private */
     this._d = 0x10325476
+    /** @private */
     this._e = 0xc3d2e1f0
 
+    /** @private */
     this._block = new Uint8Array(blockSize)
+    /** @private */
     this._blockSize = blockSize
+    /** @private */
     this._blockOffset = 0
+    /** @private */
     this._length = [0, 0, 0, 0]
 
+    /** @private */
     this._finalized = false
   }
 
+  /**
+   * @param {Uint8Array|string} data
+   * @returns {RIPEMD160}
+   */
   update (data) {
     if (this._finalized) {
       throw new Error('Digest already called')
@@ -90,6 +104,7 @@ class RIPEMD160 {
     return this
   }
 
+  /** @private */
   _update () {
     const words = ARRAY16
     const dv = new DataView(this._block.buffer, this._block.byteOffset, blockSize)
@@ -152,6 +167,10 @@ class RIPEMD160 {
     this._a = t
   }
 
+  /**
+   * @param {'hex'} [encoding]
+   * @returns {Uint8Array|string}
+   */
   digest (encoding) {
     if (this._finalized) {
       throw new Error('Digest already called')
@@ -168,6 +187,9 @@ class RIPEMD160 {
     return dig
   }
 
+  /**
+   * @returns {Uint8Array}
+   */
   _digest () {
     // create padding and handle blocks
     this._block[this._blockOffset++] = 0x80
@@ -199,26 +221,86 @@ class RIPEMD160 {
   }
 }
 
+/**
+ * @param {number} x
+ * @param {number} n
+ * @returns {number}
+ */
 function rotl (x, n) {
   return (x << n) | (x >>> (32 - n))
 }
 
+/**
+ * @param {number} a
+ * @param {number} b
+ * @param {number} c
+ * @param {number} d
+ * @param {number} e
+ * @param {number} m
+ * @param {number} k
+ * @param {number} s
+ * @returns {number}
+ */
 function fn1 (a, b, c, d, e, m, k, s) {
   return (rotl((a + (b ^ c ^ d) + m + k) | 0, s) + e) | 0
 }
 
+/**
+ * @param {number} a
+ * @param {number} b
+ * @param {number} c
+ * @param {number} d
+ * @param {number} e
+ * @param {number} m
+ * @param {number} k
+ * @param {number} s
+ * @returns {number}
+ */
 function fn2 (a, b, c, d, e, m, k, s) {
   return (rotl((a + ((b & c) | ((~b) & d)) + m + k) | 0, s) + e) | 0
 }
 
+/**
+ * @param {number} a
+ * @param {number} b
+ * @param {number} c
+ * @param {number} d
+ * @param {number} e
+ * @param {number} m
+ * @param {number} k
+ * @param {number} s
+ * @returns
+ */
 function fn3 (a, b, c, d, e, m, k, s) {
   return (rotl((a + ((b | (~c)) ^ d) + m + k) | 0, s) + e) | 0
 }
 
+/**
+ * @param {number} a
+ * @param {number} b
+ * @param {number} c
+ * @param {number} d
+ * @param {number} e
+ * @param {number} m
+ * @param {number} k
+ * @param {number} s
+ * @returns {number}
+ */
 function fn4 (a, b, c, d, e, m, k, s) {
   return (rotl((a + ((b & d) | (c & (~d))) + m + k) | 0, s) + e) | 0
 }
 
+/**
+ * @param {number} a
+ * @param {number} b
+ * @param {number} c
+ * @param {number} d
+ * @param {number} e
+ * @param {number} m
+ * @param {number} k
+ * @param {number} s
+ * @returns {number}
+ */
 function fn5 (a, b, c, d, e, m, k, s) {
   return (rotl((a + (b ^ (c | (~d))) + m + k) | 0, s) + e) | 0
 }
