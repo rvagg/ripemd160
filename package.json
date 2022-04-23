@@ -15,25 +15,30 @@
   "files": [
     "index.js"
   ],
-  "main": "./index",
+  "main": "./index.js",
+  "types": "./types/index.d.ts",
   "repository": {
     "url": "https://github.com/rvagg/ripemd160",
     "type": "git"
   },
   "scripts": {
     "lint": "standard",
+    "build:types": "tsc --build",
     "test": "npm run lint && npm run unit && npm run unit:browser",
     "unit": "mocha test/*.js",
     "unit:browser": "polendina --runner=mocha --page --worker --serviceworker --cleanup test/index.js",
-    "build": ""
+    "build": "npm run build:types"
   },
   "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
     "chai": "^4.3.6",
     "hash-test-vectors": "^1.3.2",
-    "mocha": "^9.2.0",
+    "mocha": "^9.2.2",
     "multiformats": "^9.6.4",
-    "polendina": "^2.0.11",
-    "standard": "^16.0.4"
+    "polendina": "^2.0.15",
+    "standard": "^17.0.0",
+    "typescript": "^4.6.3"
   },
   "release": {
     "branches": [

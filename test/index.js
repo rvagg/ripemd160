@@ -1,5 +1,7 @@
 /* globals it */
 
+/** @type {{input:string, ripemd160:string}[]} */
+// @ts-ignore
 const vectors = require('hash-test-vectors')
 const { base64 } = require('multiformats/bases/base64')
 const { assert } = require('chai')

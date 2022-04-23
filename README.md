@@ -4,6 +4,7 @@ Browser-safe `ripemd160` for JavaScript.
 
 This project is a fork of https://github.com/crypto-browserify/ripemd160 (and its parent, https://github.com/crypto-browserify/hash-base) but it:
 
+* Adds TypeScript types exports
 * Operates natively on `Uint8Array`s
 * Has no dependencies, even in the browser (i.e. no `Buffer`)
 * Does not handle streaming operations (i.e. just use `update()` and `digest()`)
