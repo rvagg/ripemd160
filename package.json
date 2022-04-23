@@ -12,9 +12,6 @@
     "cryptography"
   ],
   "license": "MIT",
-  "files": [
-    "index.js"
-  ],
   "main": "./index.js",
   "types": "./types/index.d.ts",
   "repository": {
