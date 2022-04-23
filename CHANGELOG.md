@@ -1,3 +1,10 @@
+### [2.2.1](https://github.com/rvagg/ripemd160/compare/v2.2.0...v2.2.1) (2022-04-23)
+
+
+### Bug Fixes
+
+* remove "files" publish restriction ([#13](https://github.com/rvagg/ripemd160/issues/13)) ([6847217](https://github.com/rvagg/ripemd160/commit/6847217baec09da886693f78a394ae3f74fbc706))
+
 ## [2.2.0](https://github.com/rvagg/ripemd160/compare/v2.1.1...v2.2.0) (2022-04-23)
 
 
