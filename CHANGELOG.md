@@ -1,3 +1,16 @@
+## [2.2.0](https://github.com/rvagg/ripemd160/compare/v2.1.1...v2.2.0) (2022-04-23)
+
+
+### Features
+
+* types ([#12](https://github.com/rvagg/ripemd160/issues/12)) ([e7d2ef0](https://github.com/rvagg/ripemd160/commit/e7d2ef00a5f17bb579063b361f236de92d624e37))
+
+
+### Trivial Changes
+
+* **no-release:** bump actions/checkout from 2.4.0 to 3.0.2 ([#11](https://github.com/rvagg/ripemd160/issues/11)) ([cc8235d](https://github.com/rvagg/ripemd160/commit/cc8235da75aee3df7c2adcd310bb8e0c57a0086c))
+* **no-release:** bump actions/setup-node from 2.5.1 to 3.1.1 ([#8](https://github.com/rvagg/ripemd160/issues/8)) ([01260c2](https://github.com/rvagg/ripemd160/commit/01260c2af54ab0e929bb63cc8932ff44efa8fed1))
+
 ### [2.1.1](https://github.com/rvagg/ripemd160/compare/v2.1.0...v2.1.1) (2022-02-15)
 
 
