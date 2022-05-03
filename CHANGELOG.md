@@ -1,3 +1,11 @@
+### [2.2.2](https://github.com/rvagg/ripemd160/compare/v2.2.1...v2.2.2) (2022-05-03)
+
+
+### Trivial Changes
+
+* **deps-dev:** bump mocha from 9.2.2 to 10.0.0 ([#14](https://github.com/rvagg/ripemd160/issues/14)) ([2baf969](https://github.com/rvagg/ripemd160/commit/2baf969ee941f1dcc7c5f43cd86b0aa7ecdf0022))
+* **deps-dev:** bump polendina from 2.0.15 to 3.0.0 ([9b53e0f](https://github.com/rvagg/ripemd160/commit/9b53e0fe5dc6ba4fd8f8d9be15ea85031b8683fe))
+
 ### [2.2.1](https://github.com/rvagg/ripemd160/compare/v2.2.0...v2.2.1) (2022-04-23)
 
 

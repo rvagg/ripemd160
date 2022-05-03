@@ -1,6 +1,6 @@
 {
   "name": "@rvagg/ripemd160",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Browser-friendly ripemd160 hasher",
   "keywords": [
     "string",
