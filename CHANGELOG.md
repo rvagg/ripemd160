@@ -1,3 +1,18 @@
+## [2.2.3](https://github.com/rvagg/ripemd160/compare/v2.2.2...v2.2.3) (2023-01-02)
+
+
+### Trivial Changes
+
+* **deps:** bump actions/checkout from 3.1.0 to 3.2.0 ([#28](https://github.com/rvagg/ripemd160/issues/28)) ([bd4ce8d](https://github.com/rvagg/ripemd160/commit/bd4ce8da8132c1754af9fdae6ac5a1848eb30f95))
+* **no-release:** bump @types/mocha from 9.1.1 to 10.0.0 ([#21](https://github.com/rvagg/ripemd160/issues/21)) ([a1fe028](https://github.com/rvagg/ripemd160/commit/a1fe028c04fb49f887d52625d8920e4314bb8611))
+* **no-release:** bump actions/checkout from 3.0.2 to 3.1.0 ([#22](https://github.com/rvagg/ripemd160/issues/22)) ([13df37f](https://github.com/rvagg/ripemd160/commit/13df37fea9c6656eaf548fe552551a3a9e5067a0))
+* **no-release:** bump actions/setup-node from 3.1.1 to 3.2.0 ([#16](https://github.com/rvagg/ripemd160/issues/16)) ([21d2890](https://github.com/rvagg/ripemd160/commit/21d289012daf642a82ff9ea2b81cc64c1dc68db4))
+* **no-release:** bump actions/setup-node from 3.2.0 to 3.3.0 ([#17](https://github.com/rvagg/ripemd160/issues/17)) ([d198912](https://github.com/rvagg/ripemd160/commit/d1989125fa06aa676a1277b2d026f604ccf189aa))
+* **no-release:** bump actions/setup-node from 3.3.0 to 3.4.0 ([#18](https://github.com/rvagg/ripemd160/issues/18)) ([9025b51](https://github.com/rvagg/ripemd160/commit/9025b51fca86698002ce35b1d96c50fe29869425))
+* **no-release:** bump actions/setup-node from 3.4.0 to 3.4.1 ([#19](https://github.com/rvagg/ripemd160/issues/19)) ([9667ad6](https://github.com/rvagg/ripemd160/commit/9667ad68a7854361dbe567bebdadc84c012013f3))
+* **no-release:** bump actions/setup-node from 3.4.1 to 3.5.0 ([#20](https://github.com/rvagg/ripemd160/issues/20)) ([67ccbb9](https://github.com/rvagg/ripemd160/commit/67ccbb9937aaaf66048e1f50ed6b7c85201c55dc))
+* **no-release:** bump actions/setup-node from 3.5.0 to 3.5.1 ([#24](https://github.com/rvagg/ripemd160/issues/24)) ([fdc5547](https://github.com/rvagg/ripemd160/commit/fdc554706d86a608aec5694a28a0778c811b473c))
+
 ### [2.2.2](https://github.com/rvagg/ripemd160/compare/v2.2.1...v2.2.2) (2022-05-03)
 
 
