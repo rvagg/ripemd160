@@ -1,3 +1,10 @@
+## [2.2.4](https://github.com/rvagg/ripemd160/compare/v2.2.3...v2.2.4) (2023-01-06)
+
+
+### Trivial Changes
+
+* **deps:** bump actions/setup-node from 3.5.1 to 3.6.0 ([#32](https://github.com/rvagg/ripemd160/issues/32)) ([a6b5c11](https://github.com/rvagg/ripemd160/commit/a6b5c113590da8fd482d0295e56a6bd9e93bd086))
+
 ## [2.2.3](https://github.com/rvagg/ripemd160/compare/v2.2.2...v2.2.3) (2023-01-02)
 
 
