@@ -1,3 +1,6 @@
+(function () {
+'use strict';
+  
 const utf8Encoder = new TextEncoder()
 const ARRAY16 = new Array(16)
 
@@ -305,4 +308,10 @@ function fn5 (a, b, c, d, e, m, k, s) {
   return (rotl((a + (b ^ (c | (~d))) + m + k) | 0, s) + e) | 0
 }
 
-module.exports = RIPEMD160
+exports.RIPEMD160 = RIPEMD160;
+  
+if ("undefined" !== typeof module) {
+  module.exports = RIPEMD160
+)
+
+}(("undefined" !== typeof module && module.exports) || window);
