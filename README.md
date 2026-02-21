@@ -1,5 +1,11 @@
 # @rvagg/ripemd160
 
+> **Archived:** This package is no longer maintained. Use [`@noble/hashes`](https://github.com/paulmillr/noble-hashes) instead, which provides zero-dependency implementations of ripemd160 and other hash functions with native `Uint8Array` support:
+>
+> ```js
+> import { ripemd160 } from '@noble/hashes/legacy.js'
+> ```
+
 Browser-safe `ripemd160` for JavaScript.
 
 This project is a fork of https://github.com/crypto-browserify/ripemd160 (and its parent, https://github.com/crypto-browserify/hash-base) but it:
